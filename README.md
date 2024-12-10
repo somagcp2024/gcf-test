@@ -1,2 +1,2 @@
 # gcf-test
-Testing cloudfunction from github
+Testing cloudfunction from github...
