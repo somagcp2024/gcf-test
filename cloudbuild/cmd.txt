@@ -1,0 +1,12 @@
+
+gcloud builds submit --region=us-central1 --tag us-central1-docker.pkg.dev/coral-mission-443817-c0/flaskapp/image:v2 .
+
+gcloud run deploy myfirstflask1 --image us-central1-docker.pkg.dev/coral-mission-443817-c0/flaskapp/image:v2 --platform managed --region us-central1 --allow-unauthenticated
+
+
+gcloud builds submit --region=us-central1 --config cloudbuild.yaml
+
+
+curl -X GET "https://my-service-812394655730.us-central1.run.app" -H "Authorization: Bearer $(gcloud auth print-identity-token)"
+
+
