@@ -17,3 +17,11 @@ steps:
   - 'managed'
   # Optional: if you want to allow unauthenticated access
   - '--allow-unauthenticated'
+  
+# Optional: Set logging to Cloud Logging only
+logging: CLOUD_LOGGING_ONLY
+
+# Optional: Use regional user-owned bucket
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
+  
